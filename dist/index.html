@@ -1,30 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="output.css">
-  
-  <title>Frontend Mentor | Profile card component</title>
+    <link
+      href="images/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="output.css" rel="stylesheet" />
 
-</head>
-<body>
-  Victor Crest
-  26
-  London
+    <title>Frontend Mentor | Profile card component</title>
+  </head>
+  <body
+    class="flex min-h-screen flex-col items-center justify-center bg-dark-cyan"
+  >
+    <div
+      class="fixed h-full w-full mobile:rotate-180 laptop:rotate-90 bg-no-repeat bg-pattern-top mobile:top-[-218px] mobile:left-[-192px] laptop:left-[-475px] z-[-1]"
+    ></div>
+    <div
+      class="fixed mobile:right-0 laptop:right-[-816px] h-full w-full bg-no-repeat bg-pattern-bottom mobile:bottom-[-386px] z-[-1]"
+    ></div>
+    <main class="z-10 overflow-hidden rounded-xl mobile:w-[335px]">
+      <img alt="" class="w-full h-[140px]" src="images/bg-pattern-card.svg" />
 
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-</body>
+      <div class="relative flex flex-col items-center gap-y-8 bg-white">
+        <img
+          alt=""
+          class="rounded-full border-white border-[5px] mt-[-48px] w-[96px] h-[96px]"
+          src="images/image-victor.jpg"
+        />
+        <div class="flex flex-col items-center">
+          <span class="font-bold">Victor Crest <span class="font-regular text-dark-gray">26</span></span> <span class="text-dark-gray">London</span>
+        </div>
+        <div class="flex w-full justify-around pb-5">
+          <div class="flex flex-col items-center">
+            <span class="text-xl font-bold">80K</span> <span class="text-dark-gray text-sm">Followers</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <span class="text-xl font-bold">803K</span><span class="text-dark-gray text-sm">Likes</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <span class="text-xl font-bold">1.4K</span><span class="text-dark-gray text-sm">Photos</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
